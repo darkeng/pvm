@@ -41,6 +41,8 @@ func main() {
 		commands.Install(args)
 	case "u", "use":
 		commands.Use(args[1:])
+	case "laravel":
+		commands.Laravel()
 	default:
 		commands.Help(true)
 	}

@@ -16,6 +16,7 @@ func Help(notFoundError bool) {
 	fmt.Println("Available Commands:")
 	fmt.Println("    help")
 	fmt.Println("    install")
+	fmt.Println("    laravel")
 	fmt.Println("    list")
 	fmt.Println("    list-remote")
 	fmt.Println("    path")
