@@ -29,17 +29,17 @@ func main() {
 	}
 
 	switch args[0] {
-	case "help":
+	case "h", "help":
 		commands.Help(false)
-	case "ls", "list":
+	case "l", "ls", "list":
 		commands.List()
-	case "ls remote", "ls-remote", "list remote", "list-remote":
+	case "lr", "ls remote", "ls-remote", "list remote", "list-remote":
 		commands.ListRemote()
-	case "path":
+	case "p", "path":
 		commands.Path()
-	case "install":
+	case "i", "install":
 		commands.Install(args)
-	case "use":
+	case "u", "use":
 		commands.Use(args[1:])
 	default:
 		commands.Help(true)
